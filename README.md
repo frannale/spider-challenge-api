@@ -1,4 +1,4 @@
-# API IOL Academy
+# API MOVIES
 
 ## Configuración del .env
 
@@ -36,10 +36,6 @@ Estos parámetros son, en orden:
 - DB_HOST -> Host de la Database
 
 - DB_NAME -> Nombre de la Database
-
-- EMAIL_USERNAME -> Email el cual se utilizará para recibir las propuestas de Empresas de la Landing
-
-- EMAIL_PASSWORD -> Password del Email
 
 <------------------------------------------------------------>
 
