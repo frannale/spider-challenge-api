@@ -1,7 +1,6 @@
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy.sql import text
 from dotenv import dotenv_values
 import os
 
@@ -11,7 +10,7 @@ config = dotenv_values(os.path.join(BASEDIR, ".env"))
 
 SQLALCHEMY_DATABASE_URL = (
     "mysql+pymysql://{0}:{1}@{2}/{3}".format(
-        config["db_user"], config["db_pass"], config["db_host"], config["db_name"]
+        config["DB_USER"], config["DB_PASS"], config["DB_HOST"], config["DB_NAME"]
     )
  )
 

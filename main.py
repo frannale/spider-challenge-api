@@ -1,4 +1,4 @@
-from routers import usuarios
+from routers import usuarios, contenidos
 from fastapi.middleware.cors import CORSMiddleware
 
 from fastapi import FastAPI
@@ -50,6 +50,7 @@ app.add_middleware(
 
 # CONTROLLERS
 app.include_router(usuarios.router)
+app.include_router(contenidos.router)
 
 
 
